@@ -1,0 +1,62 @@
+
+package semana3;
+
+import java.util.Arrays;
+
+
+public class Binario {
+    String cadena="";
+    int numero[] = new int[8];
+    int valor=0;
+    int resultado = 0;
+    public Binario(int resultadoI){
+        
+    resultadoI=resultado;
+    }
+    
+    public Binario(String cadenaI){
+    cadenaI=cadena;
+    
+    }
+
+    public void setCadena(String cadenaI) {
+        this.cadena = cadenaI;
+    }
+
+    public String getCadena() {
+        return cadena;
+    }
+    
+    
+    
+    public Binario Suma(Binario num ) {
+              
+       
+       
+        //resultado = Arrays.toString(this.numero) + num.getCadena();
+             
+               return new Binario(resultado);
+        
+    }
+ 
+    
+
+    
+
+    
+ 
+}
+
+
+package semana3;
+
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Binario nuevo = new Binario("00000010");
+        Binario nuevo2 = new Binario("00000011");
+        Binario Resultado= nuevo.Suma(nuevo2);
+    }
+}
+
